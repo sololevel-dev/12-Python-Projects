@@ -98,6 +98,14 @@ name='harry'
 # for i in range(10):
 #     print(i)
 
+#for loop ✅✅✅
+# for i in range(5,100,2): #52,54,56
+#     print(i)
+
+#for loop ✅✅✅
+# for second in range(10,0,-1): #10,9,8,7,6,5,4,3,2,1
+#     print(second)
+
 #break statement ✅✅✅
 # for i in range(10):
 #     print(i)
