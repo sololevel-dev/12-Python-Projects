@@ -117,3 +117,92 @@ name='harry'
 #     for j in range(10):
 #         print(i,j)
 
+#list ✅✅✅
+# fruits=['apple','banana','cherry']
+# print(fruits) #['apple','banana','cherry']
+# print(fruits[0]) #apple
+# print(fruits[1]) #banana
+# print(fruits[2]) #cherry
+
+#list methods ✅✅✅
+# fruits=['apple','banana','cherry']
+# fruits.append('orange')
+# print(fruits) #['apple','banana','cherry','orange']
+# fruits.remove('banana')
+# print(fruits) #['apple','cherry','orange']
+# fruits.pop()
+# print(fruits) #['apple','cherry'] #remove last element
+# fruits.pop(1)
+# print(fruits) #['apple','cherry'] #remove element at index 1
+# fruits.insert(1,'orange')
+# print(fruits) #['apple','orange','cherry'] #insert element at index 1
+# fruits.sort()
+# print(fruits) #['apple','banana','cherry'] #sort list
+# fruits.reverse()
+# print(fruits) #['cherry','banana','apple'] #reverse list
+# fruits.clear()
+# print(fruits) #[] #clear list
+# fruits.copy()
+# print(fruits) #['apple','banana','cherry'] #copy list
+# fruits.count('apple')
+# print(fruits) #1 #count element in list
+# fruits.index('apple')
+# print(fruits) #0 #index of element in list
+# fruits.extend(['orange','mango'])
+# print(fruits) #['apple','banana','cherry','orange','mango'] #extend list
+
+#2d list ✅✅✅
+# matrix=[[1,2,3],[4,5,6],[7,8,9]]
+# print(matrix) #[[1,2,3],[4,5,6],[7,8,9]]
+# print(matrix[0]) #[1,2,3]
+# print(matrix[0][0]) #1
+# print(matrix[1][2]) #6
+# print(matrix[2][1]) #8
+
+#tuple ✅✅✅ cannot be modified
+# fruits=('apple','banana','cherry')
+# print(fruits) #('apple','banana','cherry')
+# print(fruits[0]) #apple
+# print(fruits[1]) #banana
+# print(fruits[2]) #cherry
+
+#tuple methods ✅✅✅
+# fruits=('apple','banana','cherry')
+# print(fruits.count('apple')) #1
+# print(fruits.index('banana')) #1
+
+
+#set ✅✅✅  unordered and unindexed it does not allow duplicate values
+# fruits={'apple','banana','cherry'}
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.add('orange')
+# print(fruits) #{'apple','banana','cherry','orange'}
+# fruits.remove('banana')
+# print(fruits) #{'apple','cherry','orange'}
+
+#set methods ✅✅✅
+# fruits={'apple','banana','cherry'}
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.add('orange') #add element to set
+# print(fruits) #{'apple','banana','cherry','orange'}
+# fruits.remove('banana') #remove element from set
+# print(fruits) #{'apple','cherry','orange'}
+# fruits.clear() #clear set
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.pop()
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.copy() #copy of set
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.union({'orange','mango'}) #union of two sets
+# print(fruits) #{'apple','banana','cherry','orange','mango'}
+# fruits.intersection({'apple','banana','cherry'}) #intersection of two sets
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.difference({'apple','banana','cherry'}) #difference of two sets
+# print(fruits) #{'apple','banana','cherry'}
+# fruits.symmetric_difference({'apple','banana','cherry'}) #symmetric difference of two sets
+# print(fruits) #{'apple','banana','cherry'}
+
+
+
+
+
