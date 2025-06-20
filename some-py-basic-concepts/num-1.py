@@ -204,5 +204,90 @@ name='harry'
 
 
 
+# import string ✅✅✅
+# string.ascii_letters   # 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# string.ascii_lowercase # 'abcdefghijklmnopqrstuvwxyz'
+# string.ascii_uppercase # 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+# string.digits          # '0123456789'
+# string.punctuation     # '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+# string.whitespace      # ' \t\n\r\x0b\x0c'  (space, tab, newline, etc.)
+
+# import re ✅✅✅
+
+# # Search
+# re.search(r"\d+", "Item 123")       # Matches the first sequence of digits
+# # Match (only at the beginning)
+# re.match(r"Item", "Item 123")       # Matches if "Item" is at the start
+# # Find all matches
+# re.findall(r"\d+", "ID1, ID23")     # ['1', '23']
+# # Replace
+# re.sub(r"\d+", "#", "Item 123")     # 'Item #'
+# # Split by pattern
+# re.split(r"\s+", "a b   c")         # ['a', 'b', 'c']
+
+#dictionary ✅✅✅  
+# capitals={
+#     'iran':'tehran',
+#     'france':'paris',
+#     'germany':'berlin',
+#     'italy':'rome',
+#     'spain':'madrid',
+#     'portugal':'lisbon',
+#     'united states':'washington d.c.',
+# }
+
+# print(capitals['iran']) #tehran
+# print(capitals.get('iran')) #tehran
+# print(capitals.keys()) #dict_keys(['iran', 'france', 'germany', 'italy', 'spain', 'portugal', 'united states'])
+# print(capitals.values()) #dict_values(['tehran', 'paris', 'berlin', 'rome', 'madrid', 'lisbon', 'washington d.c.'])
+# print(capitals.items()) #dict_items([('iran', 'tehran'), ('france', 'paris'), ('germany', 'berlin'), ('italy', 'rome'), ('spain', 'madrid'), ('portugal', 'lisbon'), ('united states', 'washington d.c.')])
+# for key,value in capitals.items():
+#     print(key,value)
+
+#dictionary methods ✅✅✅
+# capitals.update({'japan':'tokyo'}) #update dictionary
+# capitals.pop('iran') #remove element from dictionary
+# capitals.clear() #clear dictionary
+
+#indexing ✅✅✅
+# name='Javad'
+# print(name[0]) #j
+# print(name[:3]) #jav
+# print(name[0:]) #Javad
+# print(name[0:4:2]) #ja
+# print(name[::-1]) #daavJ
+
+#string methods ✅✅✅
+# name='Javad'
+# print(name.upper()) #JAVAD
+# print(name.lower()) #javad
 
 
+#function ✅✅✅
+# def hello():
+#     print('hello')
+# hello() #hello
+
+#function with parameters ✅✅✅
+# def hello(name):
+#     print(f'hello {name}')
+# hello('Javad') #hello Javad
+#function with return value ✅✅✅
+# def hello(name):
+#     return f'hello {name}'
+# print(hello('Javad')) #hello Javad
+
+#function with default value ✅✅✅
+# def hello(name='Javad'):
+#     return f'hello {name}'
+# print(hello()) #hello Javad
+
+#function keyword arguments ✅✅✅
+# def hello(name,family):
+#     return f'hello {name} {family}'
+# print(hello(name='Javad',family='Ahmadi')) #hello Javad Ahmadi
+
+#function variable length arguments ✅✅✅
+# def hello(*names):
+#     return f'hello {names}'
+# print(hello('Javad','Ahmadi')) #hello ('Javad', 'Ahmadi')

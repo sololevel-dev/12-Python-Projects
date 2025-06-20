@@ -1,10 +1,10 @@
-#level 1
+#level 1 🤖
 #1. Hello User
 #userName=input("Enter your name: ")
 #userAge=input("Enter your age: ")
 #print(f"Hello {userName}! you are {userAge} years old")
 
-#level 1
+#level 1 🤖
 #2. Calculator
 """
 Simple calculator that performs basic arithmetic operations.
@@ -38,7 +38,7 @@ Includes input validation and division by zero protection.
 # except Exception as e:
 #     print(f"An error occurred: {e}")
 
-#level 1
+#level 1 🤖
 #3. Odd or Even
 # num=int(input('Enter a number: '))
 # if num%2==0:
@@ -47,7 +47,7 @@ Includes input validation and division by zero protection.
 #     print('your number is Odd')    
 
 
-#level 2 
+#level 2 🤖
 #1. fizzBuzz
 # for i in range(0,101):
 #     if i%3==0 and i%5==0: #if the number is divisible by 3 and 5, print FizzBuzz
@@ -102,4 +102,20 @@ Allows user to specify the maximum number for the table.
 
 #level 2 🤖
 #3. Password Strength Checker
+# import re
+# def checkPasswordStrength(password):
+#     if(len(password)<8):
+#         return 'Weak'
+#     has_letter=re.search(r'[a-zA-Z]',password) #check if password has at least on letter
+#     has_digit=re.search(r'\d+',password) #check if password has at least on digit
+#     has_specialEnd=re.search(r'[^a-zA-Z0-9]+$',password) #check if password has at least on special character check end of the string
+#     has_special=re.search(r'[^a-zA-Z0-9]',password) #check if password has at least on special character check in the middle of the string
+#     if(has_letter and has_digit and has_special):
+#         return 'Strong'
+#     elif(has_letter and has_digit):
+#         return 'Medium'
+#     else:
+#         return 'Weak'
 
+# userPassword=input('Enter your password: ')
+# print(checkPasswordStrength(userPassword))
