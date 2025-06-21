@@ -119,3 +119,59 @@ Allows user to specify the maximum number for the table.
 
 # userPassword=input('Enter your password: ')
 # print(checkPasswordStrength(userPassword))
+
+# level 3 max min average medium 🤖
+# try:
+#     user_input = input("Enter a list of numbers (comma-separated): ")
+#     numbers = [int(x) for x in user_input.split(",")]
+
+#     minimum = min(numbers)
+#     maximum = max(numbers)
+#     mean = sum(numbers) / len(numbers)
+
+#     sorted_numbers = sorted(numbers)
+#     n = len(sorted_numbers)
+#     if n % 2 == 1:
+#         median = float(sorted_numbers[n // 2])
+#     else:
+#         median = (sorted_numbers[n // 2 - 1] + sorted_numbers[n // 2]) / 2 #4//2=1+2
+
+#     print("Minimum:", minimum)
+#     print("Maximum:", maximum)
+#     print("Mean:", mean)
+#     print("Median:", median)
+#     print((sorted_numbers[n // 2 - 1] + sorted_numbers[n // 2]) / 2) 
+
+# except ValueError:
+#     print("Invalid input. Please enter only integers separated by commas.")
+
+#level 3  Word Counter (String Challenge) 🤖
+
+# def calcWordCount():
+#     sentence = input('Enter your sentence: ')
+    
+#     # Count characters (excluding spaces)
+#     characters_count = len(sentence.replace(" ", ""))
+    
+#     # Count words
+#     words = sentence.split()
+#     word_count = len(words)
+
+#     # Count each word's frequency
+#     word_frequency = {}
+#     for word in words:
+#         word = word.lower()  # optional: make it case-insensitive
+#         word_frequency[word] = word_frequency.get(word, 0) + 1
+
+#     # Find the most common word
+#     most_common_word = max(word_frequency, key=word_frequency.get)
+
+#     return {
+#         'characters_count': characters_count,
+#         'word_count': word_count,
+#         'most_common_word': most_common_word
+#     }
+
+# # Run the function and print the result
+# print(calcWordCount())
+

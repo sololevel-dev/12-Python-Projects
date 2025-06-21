@@ -27,8 +27,14 @@ name='harry'
 # print(name.count('h')) #2
 
 # #string formating ✅✅✅
-# name='harry'
-# print(f'hello {name}') #hello harry
+# name1='harry'
+# name2='Jak'
+# print(f'hello {name1}') #hello harry
+# print('Hello {1} and {0}'.format(name1,name2)) #Hello harry and Jak
+# print('Hello my name is {:10}. Nice to meet you'.format(name1)) #Hello my name is harry     . Nice to meet you
+# print('Hello my name is {:<10}. Nice to meet you'.format(name1)) #Hello my name is harry     . Nice to meet you
+# print('Hello my name is {:>10}. Nice to meet you'.format(name1)) #Hello my name is      harry. Nice to meet you
+# print('Hello my name is {:^10}. Nice to meet you'.format(name1)) #Hello my name is   harry   . Nice to meet you
 
 
 #math module ✅✅✅
@@ -287,7 +293,27 @@ name='harry'
 #     return f'hello {name} {family}'
 # print(hello(name='Javad',family='Ahmadi')) #hello Javad Ahmadi
 
-#function variable length arguments ✅✅✅
-# def hello(*names):
-#     return f'hello {names}'
-# print(hello('Javad','Ahmadi')) #hello ('Javad', 'Ahmadi')
+#args parameter that will pack all  arguments into a tuple useful so that a function can accept a varying amount of argument ✅✅✅
+# def hello(*numbers):
+#     sum=0
+#     for number in numbers:
+#         sum+=number
+#     return sum
+
+# hello(1,2,3,4,5,6) #21
+
+#kwargs parameter that will pack all arguments into a dictionary useful so that a function can accept a varying amount of keyword ✅✅✅
+# def hello(**kwargs):
+#     print(kwargs)
+
+# hello(firstUser='Javad',secondUser='Ali') #{'firstUser': 'Javad', 'secondUser': 'Ali'}
+
+
+#operators ✅✅✅
+# +	Addition	x + y	2+2=0
+# -	Subtraction	x - y	2-2=0
+# *	Multiplication	x * y	2*2=4
+# /	Division	x / y	11/2=5.5
+# %	Modulus	x % y	11%2=1
+# **	Exponentiation	x ** y	x=2 y=5 =>2*2*2*2*2
+# //	Floor division	x // y   11//2=6
