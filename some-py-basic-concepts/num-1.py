@@ -4,7 +4,7 @@
 # print(int(a)+b) #3
 
 # #string indexing ✅✅✅
-name='harry'
+# name='harry'
 # print(name[0]) #h
 
 # #string slicing ✅✅✅
@@ -278,6 +278,7 @@ name='harry'
 # def hello(name):
 #     print(f'hello {name}')
 # hello('Javad') #hello Javad
+
 #function with return value ✅✅✅
 # def hello(name):
 #     return f'hello {name}'
@@ -317,3 +318,17 @@ name='harry'
 # %	Modulus	x % y	11%2=1
 # **	Exponentiation	x ** y	x=2 y=5 =>2*2*2*2*2
 # //	Floor division	x // y   11//2=6
+
+#if __name__ == "__main__":
+# 🔹 What it does
+# This line checks whether the current file is being:
+
+# Run directly (like: python game.py) → ✅ code inside the block will run
+
+# Imported as a module (like: import game) → ❌ code inside the block won’t run
+# 🧠 Why it's useful
+# Prevents auto-executing test/demo code when your file is imported as a module.
+# Makes your scripts more reusable — you can define functions or classes in one file and use them elsewhere.
+#"Only run the following code if this file is being run directly — not if it’s imported."✅🤖
+
+
