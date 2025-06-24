@@ -2,6 +2,62 @@
 # a='1'
 # b=2
 # print(int(a)+b) #3
+# print('cats', 'dogs', 'mice', sep=',')
+# cats,dogs,mice
+
+#variable assign ✅✅✅
+# x, y, z = "Orange", "Banana", "Cherry"
+# print(x)
+# print(y)
+# print(z)
+
+# x = y = z = "Orange"
+# print(x)
+# print(y)
+# print(z)
+
+# fruits = ["apple", "banana", "cherry"]
+# x, y, z = fruits
+# print(x)
+# print(y)
+# print(z)
+
+#The global Keyword ✅✅✅
+# Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+# To create a global variable inside a function, you can use the global keyword
+
+# def myfunc():
+#   global x
+#   x = "fantastic"
+# myfunc()
+# print("Python is " + x)
+
+# Also, use the global keyword if you want to change a global variable inside a function.
+# x = "awesome"
+# def myfunc():
+#   global x
+#   x = "fantastic"
+# myfunc()
+# print("Python is " + x)
+
+# Example	Data Type	Try it ✅✅✅✅
+# x = "Hello World"	str	
+# x = 20	int	
+# x = 20.5	float	
+# x = 1j	complex	
+# x = ["apple", "banana", "cherry"]	list	
+# x = ("apple", "banana", "cherry")	tuple	
+# x = range(6)	range	
+# x = {"name" : "John", "age" : 36}	dict	
+# x = {"apple", "banana", "cherry"}	set	
+# x = frozenset({"apple", "banana", "cherry"})	frozenset	
+# x = True	bool	
+# x = b"Hello"	bytes	
+# x = bytearray(5)	bytearray	
+# x = memoryview(bytes(5))	memoryview	
+# x = None	NoneType	
+
+
 
 # #string indexing ✅✅✅
 # name='harry'
@@ -331,4 +387,32 @@
 # Makes your scripts more reusable — you can define functions or classes in one file and use them elsewhere.
 #"Only run the following code if this file is being run directly — not if it’s imported."✅🤖
 
+
+#Note: You cannot convert complex numbers into another number type.
+
+# txt = "The best things in life are free!"
+# print("free" in txt) #true
+
+#in javascript ! , in python not
+
+
+
+#exceptions ✅✅✅
+try:
+    firstNum=int(input('Enter the first number: '))
+    secondNum=int(input('Enter the second number:'))
+    result=firstNum/secondNum
+except ZeroDivisionError as e:
+    print(e)
+    print('divide to zero is not allowed')
+except ValueError as e:
+    print(e)
+    print('please enter a valid number')
+except Exception as e:
+    print(e)
+    print('something went wrong')
+else:
+    print(result)
+finally:
+    print('this will always run')
 
